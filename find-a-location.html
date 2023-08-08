@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assests/stylesheets/styles.css" />
+  <script src="https://kit.fontawesome.com/0c02a345e5.js"></script>
+  <title>Theatre</title>
+  <link rel="icon" type="image/x-icon" href="./assests/images/favicon.jpg">
+  <style>
+
+    body { 
+      background-image: url('/assests/images/stores-decoration.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; 
+    } 
+
+    table#your-table-items {
+      border-collapse: collapse;
+      /* in inspector mode - easier to see the difference between collapse and no collapse */
+      border-collapse: collapse;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      width: 100%;
+      border-bottom: #373331 3px solid;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    table#your-table-items th:nth-child(1),
+    table#your-table-items td:nth-child(1) {
+      width: 25%;
+    }
+
+    table#your-table-items th:nth-child(2),
+    table#your-table-items td:nth-child(2) {
+      width: 25%;
+    }
+
+    table#your-table-items th:nth-child(3),
+    table#your-table-items td:nth-child(3) {
+      width: 25%;
+    }
+
+    table#your-table-items th:nth-child(4),
+    table#your-table-items td:nth-child(4) {
+      width: 25%;
+    }
+
+    table#your-table-items thead {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    table#your-table-items thead th {
+      color: black;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 12px;
+    }
+
+    table#your-table-items thead th:hover {
+      color: black;
+      background-color: #E7E5D9;
+      cursor: pointer;
+    }
+
+    table#your-table-items thead th.tablesorter-headerAsc,
+    table#your-table-items thead th.tablesorter-headerDesc {
+      background-color: rgba(231, 229, 217, 1);
+    }
+
+    table#your-table-items tbody {
+      font-size: 0.9em;
+      line-height: 16px;
+    }
+
+    /*** make sure table#your-table-items tbody tr:nth-child(even) defined before table#your-table-items tbody tr:hover */
+    /*** otherwise, it would need to define table#your-table-items tbody tr:nth-child(even):hover*/
+    table#your-table-items tbody tr:nth-child(even) {
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+    table#your-table-items tbody tr:hover {
+      color: black;
+      background-color: #E7E5D9;
+    }
+
+    table#your-table-items tbody td {
+      padding: 8px 20px;
+      border-top: 1px solid rgba(0, 0, 0, 0.25);
+      border-right: 1px solid rgba(0, 0, 0, 0.25);
+      border-left: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    table#your-table-items tbody td img {
+      width: 100px;
+      margin: 0 20px 0 20px;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+    }
+  </style>
+
+</head>
+
+<body>
+    <header>
+      <nav>
+        <a class="logo" href="index.html"></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+      <ul>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="theatre.html">Theatre</a></li>
+        <li><a href="find-a-location.html">Find a Location</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <section></section>
+</header>
+
+    <div style="margin:64px 75px 0px 75px;">
+        <h3 style="font-family: 'Times New Roman'; font-size: 42px; font-weight: bold; margin-bottom: 36px; color: #373331; ">Find a Location</h3>
+
+  <article>
+    <div>
+      <p>
+        Get the store hours, driving directions and services available at our affilate shopping malls near you.
+      </p>
+      <br>
+      <table id="your-table-items">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Hours</th>
+            <th>Service</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Union City</td>
+            <td>30600 Dyer St, Union City, CA 94587</td>
+            <td>Mon - Sun | 6am - 11pm</td>
+            <td>Auto Care Center, Pharmacy, Vision Center, Wireless Services</td>
+          </tr>
+
+          <tr>
+            <td>Fremont</td>
+            <td>40580 Albrae St, Fremont, CA 94538</td>
+            <td>Mon - Sun | 6am - 11pm</td>
+            <td>Pharmacy, Photo Center, Wireless Services</td>
+          </tr>
+
+          <tr>
+            <td>San Leandro</td>
+            <td>15555 Hesperian Blvd, San Leandro, CA 94579</td>
+            <td>Mon - Sun | 6am - 11pm</td>
+            <td>Pharmacy, Photo Center</td>
+          </tr>
+
+          <tr>
+            <td>Pleasanton</td>
+            <td>4501 Rosewood Dr, Pleasanton, CA 94588</td>
+            <td>Mon - Sat | 6am - 11pm<br>Sun | 8am - 11pm</td>
+            <td>Auto Care Center, Pharmacy, Photo Center, Vision Center</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="row">
+      <div class="col-1">
+          <img src="./assests/images/logo.png">
+          <p style="padding-top: 20px;">nfewnfoenfewnfewnfewnfnewfnew</p>
+          <p>oifnewofnewofnoewinfioew</p>
+      </div>
+
+      <div class="col-2">
+        <h3 style="color: #fff;padding-bottom: 20px;">Contact</h3>
+        <p>123 Road</p>
+        <p>San Francisco, CA 94110</p>
+        <p class="email-id">info@sfmall.com</p>
+        <h4>+1(415)123-4567</h4>
+      </div>
+
+      <div class="col-3">
+        <h3 style="color: #fff; padding-bottom: 20px;">Newletter</h3>
+        <form>
+          <input type="email" placeholder="Your Email Address" required>
+          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-whatsapp"></i>
+          <i class="fab fa-pinterest"></i>
+        </div>
+      </div>
+  </div>
+</footer>
+
+  <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+  <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/JavaScript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+  <!-- BEG JavaScript -->
+  <script>
+    $(document).ready(function () {
+      $("table#your-table-items").tablesorter({
+        sortList: [[2, 0]],
+        CssAsc: "tablesorter-headerAsc",
+        CssDesc: "tablesorter-headerDesc"
+      });
+    });
+  </script>
+  <!-- END JavaScript -->
+</body>
+</html>

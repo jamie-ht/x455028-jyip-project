@@ -1,0 +1,332 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: 0;
+  list-style: none;
+  box-sizing: border-box;
+    /* Defines how the width and height of an element are calculated: should they include padding and borders, or not. */
+  /* box-sizing: border-box; Width and height apply to all parts of the element: content, padding and borders */
+  /* box-sizing: content-box; Width and height only apply to the content of the element */
+}
+
+
+
+@font-face {
+  font-family: "Font Family 1";
+  src: url(../fonts/CrimsonPro-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Font Family 2";
+  src: url(../fonts/Inter-Regular.ttf) format("truetype");
+}
+
+
+
+
+
+
+
+
+
+/* BEG styling for logo & navigation on top */
+nav {
+  background: rgb(0, 0, 0);
+  height: 60px;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Font Family 2";
+}
+
+.logo {
+  position: absolute;
+  display: block;
+  width: 66px;
+  height: 34px;
+  /* change dish-01.png to your loge image */
+  background: url(../images/logo.png) no-repeat 0 0;
+  background-size: contain;
+  z-index: 1;
+  top: 20px;
+  left: 80px;
+
+}
+header a.logo span {
+  display: none;
+}
+
+header a.logo:hover {
+  opacity: 1;
+}
+
+nav ul{
+  float:right;
+  margin-right: 80px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+
+
+
+nav ul li a {
+  color: #E7E5D9;
+  padding: 10px 24px 10px 24px;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: right;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+a.active, a:hover{
+  background: #373331;
+  transition: .3s;
+}
+
+/* END styling for logo on top */
+
+
+
+
+
+
+
+/********** BEG for dropdown menu in small screen **********/
+.checkbtn{
+  font-size: 24px;
+  color: #E7E5D9;
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+
+}
+#check{
+  display: none;
+}
+
+
+@media (max-width: 960px){
+  .checkbtn{
+    display:inline-block;
+    color: #E7E5D9;
+  }
+
+  ul{
+  position: fixed;
+  width: 100%;
+  height: 48vh;
+  background:black;
+  top: 60px;
+  left: 100%;
+  text-align: center;
+  transition: all .5s;
+  }
+
+nav ul li{
+  display: block;
+  margin: 36px 0;
+  line-height: 24px;
+}
+nav ul li a{
+  font-size: 18px;
+}
+a:hover,a.active{
+  background: none;
+  color: #373331;
+}
+#check:checked ~ ul{
+  left: 0;
+}
+
+}
+/********** END for dropdown menu in small screen **********/
+
+
+
+
+
+
+
+
+/* set padding from browser edges for content */
+@media screen and (max-width: 750px) {
+  /*header {
+    height: 240px;
+  }*/
+  header a.logo {
+    height: 28px;
+  }
+  nav {
+    /* padding: top right bottom left */
+    padding: 0px 0px 0px 0px;
+  }
+  .flex-container > div {
+    width: 0%;
+  }
+
+}
+
+
+
+
+
+
+
+html, body {
+  min-height: 100%;
+  margin-bottom: 200px;
+  clear: both;
+}
+
+body {
+  padding-bottom: 200px;
+}
+
+
+
+/*BEG ofcarousel*/
+.content{
+  height: 100%px;
+  width: 100%px;
+  position: relative;
+}
+.content .images{
+  height: 100%;
+  width: 100%;
+}
+.content .images img{
+  height: 100%;
+  width: 100%;
+}
+.btm-slides{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.btm-slides span{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid rgb(231, 229, 217, 0.5);
+  margin: 0 5px;
+  cursor: pointer;
+}
+.sliders{
+  position: absolute;
+  padding-left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.1);
+}
+.sliders:hover{
+  background: rgba(255,255,255,0.2);
+}
+.right{
+  right: 0px;
+}
+.sliders span{
+  line-height: 41px;
+  font-size: 35px;
+  color: white;
+}
+/*END of carousel*/
+
+
+
+
+
+
+/*BEG for footer*/ 
+footer{
+  background-color: black;
+  color: #E7E5D9;
+  width: 100%;
+  position: fixed;
+  padding: 20px 0px 20px;
+  bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col{
+  flex-basis: 10%;
+  padding: 10px;
+}
+
+.col:nth-child(2){
+  flex-basis: 20%;
+}
+
+form{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E7E5D9;
+  margin-bottom: 40px;
+
+}
+
+form input{
+  width: 100%;
+  background: transparent;
+  color: #E7E5D9;
+  border: 0;
+  outline: none;
+}
+
+form button{
+  background: transparent;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+}
+
+form button .fa-solid{
+  color:#E7E5D9;
+}
+
+.social-icons .fab{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  font-size: 20px;
+  color: black;
+  background: #E7E5D9;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/*HOVER icons*/
+.social-icons:hover.fab{
+  width: 36px;
+  cursor: pointer;
+}
+/*HOVER icons*/
+
+
+/*END for footer*/
