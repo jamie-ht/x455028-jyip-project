@@ -26,6 +26,8 @@
       border-bottom: #373331 3px solid;
       justify-content: space-between;
       flex-wrap: wrap;
+      padding: 10px 10px 10px 10px;
+      font-family: "Font Family 1", sans-serif;
     }
 
     table#your-table-items th:nth-child(1),
@@ -55,7 +57,7 @@
 
     table#your-table-items thead th {
       color: black;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(206, 206, 206, 0.6);
       padding: 12px;
     }
 
@@ -73,12 +75,13 @@
     table#your-table-items tbody {
       font-size: 0.9em;
       line-height: 16px;
+      background-color: #fff;
     }
 
     /*** make sure table#your-table-items tbody tr:nth-child(even) defined before table#your-table-items tbody tr:hover */
     /*** otherwise, it would need to define table#your-table-items tbody tr:nth-child(even):hover*/
     table#your-table-items tbody tr:nth-child(even) {
-      background: rgba(0, 0, 0, 0.25);
+      background: rgba(255, 255, 255, 0.15);
     }
 
     table#your-table-items tbody tr:hover {
@@ -87,16 +90,36 @@
     }
 
     table#your-table-items tbody td {
-      padding: 8px 20px;
+      padding: 12px 20px;
       border-top: 1px solid rgba(0, 0, 0, 0.25);
       border-right: 1px solid rgba(0, 0, 0, 0.25);
       border-left: 1px solid rgba(0, 0, 0, 0.25);
+      font-family: "Font Family 2", sans-serif;
     }
 
     table#your-table-items tbody td img {
       width: 100px;
       margin: 0 20px 0 20px;
       border: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+
+    @font-face {
+      font-family: "Font Family 1";
+      src: url("./assests/fonts/CrimsonPro-Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "Font Family 2";
+      src: url("./assests/fonts/Roboto-Regular.ttf") format("truetype");
+    }
+
+    .font-class {
+      font-family: "Font Family 1", sans-serif;
+    }
+
+    .font-id {
+      font-family: "Font Family 2", sans-serif;
     }
   </style>
 
@@ -122,16 +145,16 @@
     <section></section>
 </header>
 
-    <div style="margin:64px 75px 0px 75px;">
-        <h3 style="font-family: 'Times New Roman'; font-size: 42px; font-weight: bold; margin-bottom: 36px; color: #373331; ">Find a Location</h3>
+    <div style="margin:64px 75px 0px 75px; padding-bottom: 200px;">
+        <h3 class="font-class" style="font-size: 42px; font-weight: bold; margin-bottom: 36px; color: #373331; ">FIND A LOCATION</h3>
 
   <article>
     <div>
-      <p>
+      <p class="font-id">
         Get the store hours, driving directions and services available at our affilate shopping malls near you.
       </p>
       <br>
-      <table id="your-table-items">
+      <table id="your-table-items" class="font-">
         <thead>
           <tr>
             <th>Name</th>
@@ -169,6 +192,51 @@
             <td>Auto Care Center, Pharmacy, Photo Center, Vision Center</td>
           </tr>
 
+          <tr>
+            <td>San Ramon</td>
+            <td>9100 Alcosta Blvd, San Ramon, CA 94583</td>
+            <td>Mon - Sat | 6am - 11pm</td>
+            <td>Bakery, Deli, Pharmacy</td>
+          </tr>
+
+          <tr>
+            <td>Milpitas</td>
+            <td>301 Ranch Dr, Milpitas, CA 95035</td>
+            <td>Mon - Sat | 6am - 11pm</td>
+            <td>Auto Care Center, Garden Center, Pharmacy</td>
+          </tr>
+
+          <tr>
+            <td>Mountain View</td>
+            <td>600 Showers Dr, Mountain View, CA 94040</td>
+            <td>Mon - Sat | 6am - 11pm</td>
+            <td>Pharmacy, Photo Center, Wireless Services</td>
+          </tr>
+
+          <tr>
+            <td>Santa Clara</td>
+            <td>3255 Mission College Blvd, Santa Clara, CA 95054</td>
+            <td>Mon - Sat | 6am - 11pm</td>
+            <td>Bakery, Pharmacy</td>
+          </tr>
+
+          <tr>
+            <td>San Jose</td>
+            <td>4080 Stevens Creek Blvd, San Jose, CA 95129</td>
+            <td>Mon - Sat | 6am - 11pm</td>
+            <td>Bakery, Pharmacy</td>
+          </tr>
+
+          <tr>
+            <td>Livermore</td>
+            <td>2700 Las Positas Rd, Livermore, CA 94551</td>
+            <td>Mon - Sat | 6am - 11pm</td>
+            <td>Auto Care Center, Pharmacy, Vision Center</td>
+          </tr>
+
+
+
+
         </tbody>
       </table>
     </div>
@@ -193,8 +261,10 @@
   <div class="row">
       <div class="col-1">
           <img src="./assests/images/logo.png">
-          <p style="padding-top: 20px;">nfewnfoenfewnfewnfewnfnewfnew</p>
-          <p>oifnewofnewofnoewinfioew</p>
+            <p style="padding-top: 20px; padding-bottom: 20px;">San Francisco Mall is Northern California's premier <br>
+              open-air shopping and dining destination, featuring <br> 
+              over 50 world-class specialty stores, ranging <br>
+              from luxury brands to local favorites.</p>
       </div>
 
       <div class="col-2">
@@ -212,10 +282,10 @@
           <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
         </form>
         <div class="social-icons">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-whatsapp"></i>
-          <i class="fab fa-pinterest"></i>
+          <a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com/" target="_blank" class="fab fa-twitter"></i></a>
+          <a href="https://www.whatsapp.com/" target="_blank"  class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></i></a>
         </div>
       </div>
   </div>
@@ -229,7 +299,7 @@
   <script>
     $(document).ready(function () {
       $("table#your-table-items").tablesorter({
-        sortList: [[2, 0]],
+        sortList: [[0, 2]],
         CssAsc: "tablesorter-headerAsc",
         CssDesc: "tablesorter-headerDesc"
       });

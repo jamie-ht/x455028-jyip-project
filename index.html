@@ -16,12 +16,12 @@
     .centered {
       color: #E7E5D9;
       position: absolute;
-      font-size: 3vw;
-      font-weight: bold;
+      font-size: 4vw;
       text-align: center;
       top: 30%;
       left: 50%;
       transform: translate(-50%, -50%);
+      font-family: "Font Family 1";
     }
 
     .hero-image {
@@ -30,44 +30,59 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    @font-face {
+      font-family: "Font Family 1";
+      src: url("./assests/fonts/CrimsonPro-Regular.ttf") format("truetype");
+    }
+
+    .font-class {
+      font-family: "Font Family 1", sans-serif;
     }
 
   </style>
 </head>
 
 <body>
-    <header>
-      <nav>
-        <a class="logo" href="index.html"></a>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
+  <header>
+    <nav>
+      <a class="logo" href="index.html"></a>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
 
-      <ul>
-        <li><a href="stores.html">Stores</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="theatre.html">Theatre</a></li>
-        <li><a href="find-a-location.html">Find a Location</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <section></section>
+    <ul>
+      <li><a href="stores.html">Stores</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="theatre.html">Theatre</a></li>
+      <li><a href="find-a-location.html">Find a Location</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
 </header>
 
 
 
   <section style="position: relative; width: 100%;">
     <img class="hero-image" src="/assests/images/homepage.png" />
-    <div class="centered">SUMMER MODE<br>AT SAN FRANCISCO MALL</div>
+    <div class="centered">SUMMER MODE<br><br>AT SAN FRANCISCO MALL</div>
   </section>
+
 
   <footer>
     <div class="row">
         <div class="col-1">
             <img src="./assests/images/logo.png">
-            <p style="padding-top: 20px;">nfewnfoenfewnfewnfewnfnewfnew</p>
-            <p>oifnewofnewofnoewinfioew</p>
+            <p style="padding-top: 20px; padding-bottom: 20px;">San Francisco Mall is Northern California's premier <br>
+              open-air shopping and dining destination, featuring <br> 
+              over 50 world-class specialty stores, ranging <br>
+              from luxury brands to local favorites.</p>
         </div>
   
         <div class="col-2">
@@ -85,10 +100,10 @@
             <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
           </form>
           <div class="social-icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-whatsapp"></i>
-            <i class="fab fa-pinterest"></i>
+            <a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/" target="_blank" class="fab fa-twitter"></i></a>
+            <a href="https://www.whatsapp.com/" target="_blank"  class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></i></a>
           </div>
         </div>
     </div>

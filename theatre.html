@@ -38,6 +38,26 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    @font-face {
+      font-family: "Font Family 1";
+      src: url("./assests/fonts/CrimsonPro-Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "Font Family 2";
+      src: url("./assests/fonts/Roboto-Regular.ttf") format("truetype");
+    }
+
+    .font-class {
+      font-family: "Font Family 1", sans-serif;
+    }
+
+    .font-id {
+      font-family: "Font Family 2", sans-serif;
+    }
+
+
   </style>
 </head>
 <body>
@@ -57,73 +77,72 @@
       <li><a href="about.html">About</a></li>
     </ul>
   </nav>
-  <section></section>
 </header>
 
 
 <div style="margin:64px 75px 0px 75px;">
-      <h3 style="font-family: 'Times New Roman'; font-size: 42px; font-weight: bold; margin-bottom: 36px; color: #373331;">Theatre</h3>
+      <h3 class="font-class" style="font-size: 42px; font-weight: bolder; margin-bottom: 36px; color: #373331;">THEATRE</h3>
       <p style="padding-bottom: 1%; color:#373331">San Francisco Theaters has been a mainstay in the Bay Area community since 1986. After nearly two years of a full renovation, moviegoers can delight in Hollywood’s latest blockbusters while enjoying the brand new amenities available exclusively at San Francisco Theaters. See the latest showtime and movie listings:</p>
-
-
-  <div class="image-container">
-    <div>
-      <a href="./assests/images/indiana-jones.jpg" data-lightbox="movie-01" data-title="Indiana Jones">
-      <img src="./assests/images/indiana-jones.jpg" alt="Indiana Jones and the Dial of Destiny" width="300px" height="444px">
-      <div class="image-caption">Indiana Jones and the Dial of Destiny</div>
-    </div>
-    <div>
-      <a href="./assests/images/barbie.jpg" data-lightbox="movie-02" data-title="Barbie">
-      <img src="./assests/images/barbie.jpg" alt="Barbie" width="300px" height="444px">
-      <div class="image-caption">Barbie</div>
-    </div>
-    <div>
-      <a href="./assests/images/no-hard-feelings.jpg" data-lightbox="movie-03" data-title="No Hard Feelings">
-      <img src="./assests/images/no-hard-feelings.jpg" alt="No Hard Feelings" width="300px" height="444px">
-      <div class="image-caption">No Hard Feelings</div>
-    </div>
-    <div>
-      <a href="./assests/images/sound-of-freedom.jpg" data-lightbox="movie-04" data-title="Sound of Freedom">
-        <img src="./assests/images/sound-of-freedom.jpg" alt="Sound of Freedom" width="300px" height="444px">
-        <div class="image-caption">Sound of Freedom</div>
-      </div>
-  </div>
-
-  <br>
-  <br>
-  
-  <div class="image-container">
-  <div>
-    <a href="./assests/images/ELEMENTAL.jpg" data-lightbox="movie-05" data-title="Elemental">
-    <img src="./assests/images/ELEMENTAL.jpg" alt="Elemental" width="300px" height="444px">
-    <div class="image-caption">Elemental</div>
-  </div>
-  <div>
-    <a href="./assests/images/mission-impossible.jpg" data-lightbox="movie-06" data-title="Mission Impossible">
-    <img src="./assests/images/mission-impossible.jpg" alt="Mission: Impossible - Dead Reckoning Part One" width="300px" height="444px">
-    <div class="image-caption">Mission: Impossible - Dead Reckoning Part One</div>
-  </div>
-  <div>
-    <a href="./assests/images/joy-ride.jpg" data-lightbox="movie-07" data-title="Joy Rice">
-    <img src="./assests/images/joy-ride.jpg" alt="Joy Ride" width="300px" height="444px">
-    <div class="image-caption">Joy Ride</div>
-  </div>
-  <div>
-    <a href="./assests/images/Oppenheimer.jpg" data-lightbox="movie-08" data-title="Oppenheimer">
-      <img src="./assests/images/Oppenheimer.jpg" alt="Oppenheimer" width="300px" height="444px">
-      <div class="image-caption">Oppenheimer</div>
-    </div>
-  <!-- Add more <div> blocks with images and captions for additional images -->
 </div>
-</div>
+
+  <div style="margin:0px 56px 0px 56px; padding-bottom: 200px;">
+      <article>
+        <div>
+          <a href="./assests/images/theatre-indiana-jones.jpg" data-lightbox="movie" data-title="Indiana Jones and the Dial of Destiny">
+            <img src="./assests/images/theatre-indiana-jones.jpg" alt="Indiana Jones and the Dial of Destiny" 
+            style="width: 300px; height: 444px; margin-right: 12px; margin-left: 12px;" />
+          </a>
+          <a href="./assests/images/theatre-barbie.jpg" data-lightbox="movie" data-title="Barbie">
+            <img src="./assests/images/theatre-barbie.jpg" alt="Barbie"
+            style="width: 300px; height: 444px; margin-right: 12px; margin-left: 12px;" />
+          </a>
+          <a href="./assests/images/theatre-no-hard-feelings.jpg" data-lightbox="movie" data-title="No Hard Feelings">
+            <img src="./assests/images/theatre-no-hard-feelings.jpg" alt="No Hard Feelings"
+            style="width: 300px; height: 444px; margin-right: 12px; margin-left: 12px;" />
+          </a>
+          <a href="./assests/images/theatre-sound-of-freedom.jpg" data-lightbox="movie" data-title="Sound of Freedom">
+            <img src="./assests/images/theatre-sound-of-freedom.jpg" alt="Sound of Freedom"
+            style="width: 300px; height: 444px; margin-right: 12px; margin-left: 12px;" />
+          </a>
+        </div>
+      </article>
+
+      <br>
+      <br>
+
+      <article>
+        <div>
+          <a href="./assests/images/theatre-elemental.jpg" data-lightbox="movie" data-title="Elemental">
+            <img src="./assests/images/theatre-elemental.jpg" alt="Elemental" 
+            style="width: 300px; height: 444px; margin-right: 12px; margin-left: 12px;" />
+          </a>
+          <a href="./assests/images/theatre-mission-impossible.jpg" data-lightbox="movie" data-title="Mission: Impossible - Dead Reckoning Part One">
+            <img src="./assests/images/theatre-mission-impossible.jpg" alt="Mission: Impossible - Dead Reckoning Part One"
+            style="width: 300px; height: 444px; margin-right: 12px; margin-left: 12px;" />
+          </a>
+          <a href="./assests/images/theatre-joy-ride.jpg" data-lightbox="movie" data-title="Joy Ride">
+            <img src="./assests/images/theatre-joy-ride.jpg" alt="Joy Ride"
+            style="width: 300px; height: 444px; margin-right: 12px; margin-left: 12px;" />
+          </a>
+          <a href="./assests/images/theatre-oppenheimer.jpg" data-lightbox="movie" data-title="Oppenheimer">
+            <img src="./assests/images/theatre-oppenheimer.jpg" alt="Oppenheimer"
+            style="width: 300px; height: 444px; margin-right: 12px; margin-left: 12px;" />
+          </a>
+        </div>
+      </article>
+
+  </div>
+
 
 
 <footer>
   <div class="row">
       <div class="col-1">
           <img src="./assests/images/logo.png">
-          <p style="padding-top: 20px;">nfewnfoenfewnfewnfewnfnewfnew</p>
-          <p>oifnewofnewofnoewinfioew</p>
+          <p style="padding-top: 20px; padding-bottom: 20px;">San Francisco Mall is Northern California's premier <br>
+            open-air shopping and dining destination, featuring <br> 
+            over 50 world-class specialty stores, ranging <br>
+            from luxury brands to local favorites.</p>
       </div>
 
       <div class="col-2">
@@ -141,10 +160,10 @@
           <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
         </form>
         <div class="social-icons">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-whatsapp"></i>
-          <i class="fab fa-pinterest"></i>
+          <a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com/" target="_blank" class="fab fa-twitter"></i></a>
+          <a href="https://www.whatsapp.com/" target="_blank"  class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></i></a>
         </div>
       </div>
   </div>

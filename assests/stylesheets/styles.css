@@ -22,13 +22,6 @@
 }
 
 
-
-
-
-
-
-
-
 /* BEG styling for logo & navigation on top */
 nav {
   background: rgb(0, 0, 0);
@@ -52,14 +45,21 @@ body {
   z-index: 1;
   top: 20px;
   left: 80px;
-
 }
+
 header a.logo span {
   display: none;
 }
 
 header a.logo:hover {
-  opacity: 1;
+  opacity: 0.5;
+}
+
+/*navigation bar*/
+nav ul::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 nav ul{
@@ -74,7 +74,6 @@ nav ul li{
 }
 
 
-
 nav ul li a {
   color: #E7E5D9;
   padding: 10px 24px 10px 24px;
@@ -85,15 +84,13 @@ nav ul li a {
   border-radius: 3px;
 }
 
-a.active, a:hover{
+nav ul li a:hover{
   background: #373331;
   transition: .3s;
+  color: #fff;
 }
 
-/* END styling for logo on top */
-
-
-
+/* END styling for navigation bar */
 
 
 
@@ -107,10 +104,18 @@ a.active, a:hover{
   margin-right: 40px;
   cursor: pointer;
   display: none;
-
 }
 #check{
   display: none;
+}
+
+.checkbtn:hover{
+  display: block;
+  opacity: 0.5;
+}
+
+.checkbtn a.logo:hover {
+  opacity: 0.5;
 }
 
 
@@ -120,8 +125,9 @@ a.active, a:hover{
     color: #E7E5D9;
   }
 
-  ul{
-  position: fixed;
+
+ul{
+  position: absolute;
   width: 100%;
   height: 48vh;
   background:black;
@@ -129,7 +135,8 @@ a.active, a:hover{
   left: 100%;
   text-align: center;
   transition: all .5s;
-  }
+  z-index: 9999;
+}
 
 nav ul li{
   display: block;
@@ -139,19 +146,26 @@ nav ul li{
 nav ul li a{
   font-size: 18px;
 }
-a:hover,a.active{
-  background: none;
-  color: #373331;
+nav ul li a:hover,a.active{
+  color: #E7E5D9;
+  padding: 10px 24px 10px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: right;
+  font-weight: bold;
+  border-radius: 3px;
+  transition: .3s;
 }
+
+.checkbtn.logo:hover {
+  opacity: 0.5;
+}
+
 #check:checked ~ ul{
   left: 0;
 }
-
 }
 /********** END for dropdown menu in small screen **********/
-
-
-
 
 
 
@@ -175,35 +189,64 @@ a:hover,a.active{
 
 }
 
-
-
-
-
-
-
 html, body {
-  min-height: 100%;
-  margin-bottom: 200px;
+  min-height: 147.5px;
   clear: both;
 }
 
 body {
-  padding-bottom: 200px;
+  padding-bottom: 100px;
+}
+/* end padding for content */
+
+
+/********** BEG accordion **********/
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  transition: 0.4s;
+  background-color: transparent;
+  color: #373331;
+  padding-bottom: 10px;
 }
 
 
+.accordion:after {
+  content: '\002B';
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
 
-/*BEG ofcarousel*/
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/********** END accordion **********/
+
+
+/* BEG of carousel */
 .content{
   height: 100%px;
   width: 100%px;
   position: relative;
+  overflow: hidden;
 }
 .content .images{
   height: 100%;
   width: 100%;
 }
-.content .images img{
+.images img{
   height: 100%;
   width: 100%;
 }
@@ -222,6 +265,26 @@ body {
   margin: 0 5px;
   cursor: pointer;
 }
+
+.content .slide{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border: 2px solid white;
+  background: rgba(255,255,255,0.2);
+}
+
+.content .slide:hover{
+  background: rgba(255,255,255,0.2);
+}
+
+
+
+
+
+
 .sliders{
   position: absolute;
   padding-left: 10px;
@@ -242,14 +305,14 @@ body {
   font-size: 35px;
   color: white;
 }
-/*END of carousel*/
+/* END of carousel */
 
 
 
 
 
 
-/*BEG for footer*/ 
+/* BEG for footer */ 
 footer{
   background-color: black;
   color: #E7E5D9;
@@ -321,12 +384,12 @@ form button .fa-solid{
   cursor: pointer;
 }
 
-/*HOVER icons*/
+/* HOVER icons */
 .social-icons:hover.fab{
   width: 36px;
   cursor: pointer;
 }
-/*HOVER icons*/
+/* HOVER icons */
 
 
 /*END for footer*/

@@ -43,6 +43,24 @@
       display: table;
       clear: both;
     }
+
+    @font-face {
+      font-family: "Font Family 1";
+      src: url("./assests/fonts/CrimsonPro-Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "Font Family 2";
+      src: url("./assests/fonts/Inter-Regular.ttf") format("truetype");
+    }
+
+    .font-class {
+      font-family: "Font Family 1", sans-serif;
+    }
+
+    .font-id {
+      font-family: "Font Family 2", sans-serif;
+    }
     
     
   </style>
@@ -71,28 +89,41 @@
 
   
   <div style="margin:64px 75px 0px 75px;">
-    <h3 style="font-family: 'Times New Roman'; font-size: 42px; font-weight: bold; margin-bottom: 36px; color: #373331;">Events</h3>
+    <h3 class="font-class" style="font-size: 42px; font-weight: bold; margin-bottom: 36px; color: #373331;">EVENTS</h3>
 
   <article style="width: 25%; float: left;">
     <div class="scrolling">
+        <p class="font-id">
+          San Francisco Mall offers an array of engaging and vibrant experiences that 
+          bring the shopping environment to life, creating an unforgettable atmosphere 
+          for both regular visitors and newcomers alike. With a dynamic range of interactive 
+          activations, live entertainment, and engaging events hosted in The Park, our mall 
+          is a hub of excitement and community engagement. Moreover, we constantly refresh 
+          the shopping landscape with captivating limited-time pop-ups, providing an ever-evolving 
+          selection of products and services that resonate with the tastes and interests of our diverse clientele.
+        </p><br>
         <p>
-          From interactive activations and live entertainment in The Park to limited-time pop-ups and in-store styling, San Francisco Mall comes alive each week with exclusive experiences.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Ut enim ad minim veniam, quis Ut enim ad minim veniam, quis Ut enim ad minim veniam, quis Ut enim ad minim veniam, quis
+          Our commitment to enhancing the shopping journey extends even further, as our stores offer personalized 
+          in-store styling sessions to cater to individual preferences, ensuring that every shopper finds the perfect 
+          look. This approach transforms San Francisco Mall into more than just a shopping destination; it becomes
+           a place where every visit is a chance to explore new, exclusive experiences and discover what makes our 
+           mall a dynamic and vibrant centerpiece of the community. Each week brings fresh opportunities to discover 
+           something unique, and we take pride in making San Francisco Mall a captivating space where retail goes beyond
+            the ordinary to create lasting memories.
         </p>
       </div>
   </article>
 
 
-  <section style="width: 75%; float: right; right: 0; padding-left: 20px;padding-bottom: 50px;">
+  <section style="width: 75%; float: right; right: 0; padding-left: 20px;padding-bottom: 300px;">
     <div class="content">
       <div class="images">
          <img src="./assests/images/carousel-1.png">
-         <img src="./assests/images/carousel-1.png">
-         <img src="./assests/images/carousel-1.png">
-         <img src="./assests/images/carousel-1.png">
-         <img src="./assests/images/carousel-1.png">
+         <img src="./assests/images/carousel-2.png">
+         <img src="./assests/images/carousel-3.png">
+         <img src="./assests/images/carousel-4.png">
+         <img src="./assests/images/carousel-5.png">
+
       </div>
       <div class="btm-slides">
          <span onclick="btm_slide(1)"></span>
@@ -100,6 +131,7 @@
          <span onclick="btm_slide(3)"></span>
          <span onclick="btm_slide(4)"></span>
          <span onclick="btm_slide(5)"></span>
+         <span onclick="btm_slide(6)"></span>
       </div>
       <div class="sliders left" onclick="side_slide(-1)">
          <span class="fas fa-caret-left"></span>
@@ -113,12 +145,15 @@
 
 
 
+
     <footer>
       <div class="row">
           <div class="col-1">
-              <img src="./assests/images/logo.png">
-              <p style="padding-top: 20px;">nfewnfoenfewnfewnfewnfnewfnew</p>
-              <p>oifnewofnewofnoewinfioew</p>
+            <img src="./assests/images/logo.png">
+            <p style="padding-top: 20px; padding-bottom: 20px;">San Francisco Mall is Northern California's premier <br>
+              open-air shopping and dining destination, featuring <br> 
+              over 50 world-class specialty stores, ranging <br>
+              from luxury brands to local favorites.</p>
           </div>
     
           <div class="col-2">
@@ -136,10 +171,10 @@
               <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
             </form>
             <div class="social-icons">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-whatsapp"></i>
-              <i class="fab fa-pinterest"></i>
+              <a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/" target="_blank" class="fab fa-twitter"></i></a>
+              <a href="https://www.whatsapp.com/" target="_blank"  class="fab fa-whatsapp"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></i></a>
             </div>
           </div>
       </div>
